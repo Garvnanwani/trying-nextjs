@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import ArticleList from '../components/ArticleList';
 import { server } from '../config';
 
@@ -6,11 +5,6 @@ export default function Home({ articles }) {
   console.log(articles);
   return (
     <div>
-      <Head>
-        <title>My First Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <ArticleList articles={articles} />
     </div>
   )
